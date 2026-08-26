@@ -4,7 +4,7 @@ import { GeistMono } from "geist/font/mono";
 import { ThemeInitScript } from "@/components/theme-toggle";
 import "./globals.css";
 
-const SITE_URL = "https://example.com"; // TODO: replace with your deployed domain
+const SITE_URL = "https://portfolio-livid-nu-zdz0n6d1b6.vercel.apps";
 const SITE_NAME = "Vina Kodiyatar — Backend & Full-Stack Engineer";
 const SITE_DESCRIPTION =
   "Backend-focused software engineer specializing in Node.js, Next.js and AWS, building reliable APIs, production systems and AI-powered products with RAG and agentic AI.";

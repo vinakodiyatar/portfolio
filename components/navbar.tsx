@@ -3,14 +3,17 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X, FileText } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "./icons";
+import { GithubIcon, LinkedinIcon, HashnodeIcon } from "./icons";
 import { ThemeToggle } from "./theme-toggle";
 import { socials } from "@/data/skills";
 
 const NAV_LINKS = [
   { href: "/#about", label: "About" },
   { href: "/#experience", label: "Experience" },
+  { href: "/#certificates", label: "Certificates" },
   { href: "/#projects", label: "Projects" },
+  { href: "/#blogs", label: "Blogs" },
+  { href: "/#stack", label: "Tech Stack" },
   { href: "/#ai", label: "AI" },
   { href: "/#contact", label: "Contact" },
 ];
@@ -47,9 +50,9 @@ export function Navbar() {
         <nav className="container-page flex h-16 items-center justify-between">
           <Link
             href="/#top"
-            className="font-mono text-sm font-medium tracking-tight text-[var(--text-primary)]"
+            className="font-mono text-sm font-medium tracking-tight text-[var(--text-primary)] hover:text-[var(--accent-text)] transition-colors"
           >
-            {"</dev>"}
+            {"<vina.dev />"}
           </Link>
 
           <div className="hidden items-center gap-1 md:flex">
@@ -82,6 +85,15 @@ export function Navbar() {
               className="text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
             >
               <LinkedinIcon className="h-[18px] w-[18px]" />
+            </a>
+            <a
+              href={socials.hashnode}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Hashnode profile"
+              className="text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
+            >
+              <HashnodeIcon className="h-[18px] w-[18px]" />
             </a>
             <ThemeToggle />
             <a
@@ -127,6 +139,9 @@ export function Navbar() {
             </a>
             <a href={socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn profile" className="text-[var(--text-secondary)]">
               <LinkedinIcon className="h-5 w-5" />
+            </a>
+            <a href={socials.hashnode} target="_blank" rel="noreferrer" aria-label="Hashnode profile" className="text-[var(--text-secondary)]">
+              <HashnodeIcon className="h-5 w-5" />
             </a>
             <ThemeToggle />
             <a

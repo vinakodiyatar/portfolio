@@ -5,80 +5,79 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    title: "Languages",
-    items: ["JavaScript", "TypeScript", "Python"],
-  },
-  {
-    title: "Frontend",
-    items: ["React", "Next.js", "HTML", "CSS", "Tailwind CSS"],
-  },
-  {
     title: "Backend",
-    items: ["Node.js", "Express.js", "REST APIs"],
-  },
-  {
-    title: "Databases",
-    items: ["MongoDB", "PostgreSQL", "SQL"],
+    items: ["Node.js", "Express.js", "REST APIs", "Microservices", "System Design", "JWT / OAuth", "Redis"],
   },
   {
     title: "Cloud / DevOps",
     items: [
-      "AWS",
-      "EC2",
-      "Lambda",
-      "API Gateway",
+      "AWS (EC2, Lambda, S3, API Gateway)",
       "CloudFront",
       "Route 53",
       "CloudWatch",
-      "Git",
-      "GitHub Actions",
+      "Docker",
+      "CI/CD",
+      "Git & GitHub Actions",
     ],
   },
   {
-    title: "AI",
-    items: ["LLM APIs", "RAG", "Vector Search", "AI Agents", "MCP"],
+    title: "Databases",
+    items: ["MongoDB", "Aggregation Pipelines", "PostgreSQL", "SQL", "Mongoose", "Prisma"],
+  },
+  {
+    title: "AI Engineering",
+    items: ["LLM APIs", "RAG Systems", "Vector Search", "AI Agents", "MCP", "Prompt Engineering"],
+  },
+  {
+    title: "Languages",
+    items: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3 / Sass", "SQL"],
+  },
+  {
+    title: "Frontend",
+    items: ["React", "Next.js", "Tailwind CSS", "State Management", "Responsive UI"],
   },
 ];
 
 export const currentlyExploring = [
-  "AI Agents",
-  "RAG",
-  "LLM Applications",
-  "MCP",
-  "AI Automation",
+  "AI Agents & Multi-Agent Swarms",
+  "RAG & Semantic Vector Search",
+  "Model Context Protocol (MCP)",
+  "Autonomous Tool-Calling Workflows",
+  "AI Automation Pipelines",
 ];
 
 export const aiJourney = [
-  "Backend Engineering",
-  "AI Applications",
-  "RAG",
-  "AI Agents",
+  "Backend Architecture",
+  "API Integration",
+  "RAG & Vector DBs",
+  "Autonomous Agents",
   "Agentic Systems",
 ];
 
 export const buildingBlocks = [
   {
     title: "Scalable Backend Systems",
-    description: "APIs, services, integrations and backend architecture.",
+    description: "High-throughput REST APIs, asynchronous workers, microservices and fault-tolerant architecture.",
   },
   {
     title: "AI-Powered Products",
-    description: "Practical applications using LLMs, RAG and AI APIs.",
+    description: "Production-ready applications leveraging LLMs, RAG knowledge bases, and structured tool calling.",
   },
   {
     title: "Cloud Infrastructure",
-    description: "Deploying and operating applications using AWS.",
+    description: "Architecting, deploying, and operating resilient cloud services on AWS with CI/CD automation.",
   },
   {
-    title: "Developer Experience",
-    description: "Clean APIs, maintainable architecture and reliable workflows.",
+    title: "Developer & System Reliability",
+    description: "Clean API contracts, observable logging, robust database indexing, and maintainable codebases.",
   },
 ];
 
 export const socials = {
   github: "https://github.com/vinakodiyatar",
-  linkedin: "www.linkedin.com/in/vina-kodiyatar",
+  linkedin: "https://www.linkedin.com/in/vina-kodiyatar",
   email: "vinakodiyatar556@gmail.com",
   resume: "https://docs.google.com/document/d/1W3l4mdHacHfP3kphhSXclUVzGcUihNCb/edit?usp=sharing&ouid=113247782817677347580&rtpof=true&sd=true",
+  hashnode: "https://hashnode.com/@vinakodiyatar",
   name: "Vina Kodiyatar",
 };

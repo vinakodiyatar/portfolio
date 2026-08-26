@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { Mail, Send } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "./icons";
+import { GithubIcon, LinkedinIcon, HashnodeIcon } from "./icons";
 import { Reveal } from "./reveal";
 import { socials } from "@/data/skills";
 
@@ -55,6 +55,15 @@ export function Contact() {
             >
               <GithubIcon className="h-4 w-4" />
               GitHub
+            </a>
+            <a
+              href={socials.hashnode}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-3 text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
+            >
+              <HashnodeIcon className="h-4 w-4" />
+              Hashnode
             </a>
           </div>
         </Reveal>

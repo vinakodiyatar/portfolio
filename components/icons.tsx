@@ -25,3 +25,30 @@ export function LinkedinIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function AnthropicIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="m13.827 3.52 6.946 16.96h-3.328l-1.464-3.717H8.02l-1.464 3.717H3.228L10.173 3.52h3.654Zm-.872 4.195-2.736 6.946h5.472l-2.736-6.946Z" />
+    </svg>
+  );
+}
+
+export function HashnodeIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M22.351 8.019l-6.37-6.37a5.63 5.63 0 0 0-7.962 0l-6.37 6.37a5.63 5.63 0 0 0 0 7.962l6.37 6.37a5.63 5.63 0 0 0 7.962 0l6.37-6.37a5.63 5.63 0 0 0 0-7.962zM12 15.6a3.6 3.6 0 1 1 0-7.2 3.6 3.6 0 0 1 0 7.2z" />
+    </svg>
+  );
+}
+

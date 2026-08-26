@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://example.com/sitemap.xml", // TODO: replace with your deployed domain
+    sitemap: "https://example.com/sitemap.xml", //  replace with  deployed domain
   };
 }
