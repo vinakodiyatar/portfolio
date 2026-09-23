@@ -58,7 +58,7 @@ export function Footer() {
       </div>
       <div className="container-page mt-6 border-t border-[var(--border)] pt-4 text-center">
         <p className="text-xs text-[var(--text-tertiary)]">
-          © {year} {socials.name}. Built with Next.js, TypeScript &amp; Tailwind CSS.
+          © {year} {socials.name}. Built with curiosity, caffeine &amp; questionable amounts of debugging.
         </p>
       </div>
     </footer>

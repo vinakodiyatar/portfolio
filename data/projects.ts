@@ -23,7 +23,7 @@ export const projects: Project[] = [
     slug: "prompt2print",
     name: "Prompt2Print",
     category: "AI Product",
-    featured: true,
+    featured: false,
     description:
       "An AI-powered image generation platform that turns user prompts into printable designs.",
     problem:
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     slug: "atsflow",
     name: "ATSFlow",
     category: "Backend / SaaS",
-    featured: true,
+    featured: false,
     description:
       "An applicant tracking and interview scheduling platform designed around scalable backend workflows.",
     problem:
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     slug: "rag-knowledge-assistant",
     name: "RAG Knowledge Assistant",
     category: "AI Engineering",
-    featured: true,
+    featured: false,
     description:
       "A retrieval-augmented generation project exploring how to ground LLM answers in a specific knowledge base instead of relying on the model alone.",
     problem:
@@ -111,6 +111,98 @@ export const projects: Project[] = [
     technologies: ["Supabase", "Vector Search", "LLM APIs", "Node.js", "Prompt Engineering"],
     links: {},
   },
+  {
+  slug: "marketpilot-ai",
+  name: "MarketPilot AI",
+  category: "AI Engineering",
+  featured: true,
+  description:
+    "An AI-powered marketing platform that generates SEO content, metadata, outlines, internal linking suggestions, FAQs, and marketing assets using multiple LLM providers with production-oriented backend infrastructure.",
+
+  problem:
+    "Marketing workflows often require repetitive content generation across SEO, metadata, FAQs, and ad copy. A useful AI system needs to generate structured, platform-specific output while handling provider failures, usage limits, authentication, and multi-tenant workloads reliably.",
+
+  solution:
+    "Built a multi-tenant AI backend using Gemini as the primary provider with Mistral as a fallback. The system uses JWT authentication, quotas, rate limiting, request logging, MongoDB, and structured AI prompts to generate marketing content. Added provider fallback and exponential backoff for handling rate limits and temporary AI provider failures.",
+
+  features: [
+    "AI-powered SEO content and metadata generation",
+    "SEO outlines, internal linking suggestions, and FAQ generation",
+    "Google Ads content generation with character-limit handling",
+    "Gemini primary provider with Mistral fallback",
+    "Exponential backoff for AI provider rate limits and failures",
+    "Multi-tenant JWT authentication",
+    "Usage quotas and API rate limiting",
+    "Request logging and MongoDB persistence",
+    "PDF and DOCX export for generated content",
+  ],
+
+  challenges: [
+    "Designing reliable AI provider fallback when requests are rate-limited or fail",
+    "Keeping generated content within platform-specific character limits",
+    "Designing prompts that consistently return structured marketing output",
+    "Managing authentication, quotas, and rate limits in a multi-tenant backend",
+    "Balancing AI generation quality with API reliability and cost",
+  ],
+
+  technologies: [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Gemini API",
+    "Mistral AI",
+    "JWT",
+    "REST APIs",
+    "AI/LLM Integration",
+    "Prompt Engineering",
+  ],
+
+  links: {},
+},
+{
+  slug: "moonwalk",
+  name: "MoonWalk",
+  category: "Backend Engineering",
+  featured: true,
+  description:
+    "A space-themed restaurant kitchen scheduling system designed to simulate how incoming orders can be scheduled and executed based on available kitchen resources and different scheduling strategies.",
+
+  problem:
+    "Restaurant kitchen orders compete for limited resources such as ingredients, equipment, and preparation capacity. A simple first-in-first-out approach does not always produce efficient execution, so the system needed to model resource availability and compare different scheduling strategies.",
+
+  solution:
+    "Built a backend scheduling system that tracks orders, required resources, execution state, estimated completion time, and execution logs. Implemented scheduling strategies including FIFO Resource Queue and Shortest Job Next (SJN), with ETA calculations based on the current backlog and required resources.",
+
+  features: [
+    "Order creation and kitchen scheduling",
+    "FIFO Resource Queue scheduling strategy",
+    "Shortest Job Next (SJN) scheduling strategy",
+    "Resource availability tracking",
+    "Dynamic ETA and countdown calculation",
+    "Order execution tracking",
+    "Execution logs for completed and running tasks",
+    "SQLite persistence with better-sqlite3",
+  ],
+
+  challenges: [
+    "Designing a scheduling model around limited kitchen resources",
+    "Calculating realistic ETAs based on existing backlog and resource requirements",
+    "Implementing and comparing multiple scheduling strategies",
+    "Keeping order state and execution logs consistent during scheduling",
+  ],
+
+  technologies: [
+    "Node.js",
+    "JavaScript",
+    "SQLite",
+    "better-sqlite3",
+    "REST APIs",
+    "Scheduling Algorithms",
+    "Resource Management",
+  ],
+
+  links: {},
+},
 ];
 
 export const featuredProjects = projects.filter((p) => p.featured);
